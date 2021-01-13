@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  color: white;
+  /* color: white; */
 }
 
 header {
@@ -22,7 +22,7 @@ header {
 header .logo {
   position: relative;
   font-weight: 700;
-  color: #fff;
+  color: black;
   text-decoration: none;
   font-size: 2em;
   text-transform: uppercase;
@@ -43,7 +43,7 @@ header #toggle:before {
   top: 7px;
   width: 100%;
   height: 2px;
-  background: whitesmoke;
+  background: black;
 }
 
 header #toggle:after {
@@ -52,7 +52,7 @@ header #toggle:after {
   bottom: 7px;
   width: 100%;
   height: 2px;
-  background: whitesmoke;
+  background: black;
 }
 
 .banner.active header #toggle:before {
@@ -74,17 +74,53 @@ header #toggle:after {
   width: 100%;
   min-height: 100vh;
   padding: 100px;
-  background-color: black;
+  background-color: white;
   background-size: cover;
   display: flex;
   justify-content: space-around;
   align-items: center;
   transition: 0.5s;
-  z-index: 1;
+  z-index: 2;
 }
 
 .banner.active {
   transform: translateX(-400px);
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  color: white;
+  transition: 0.3s;
+  margin: 0px 10px;
+}
+
+.card img {
+  height: 300px;
+  width: 320px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(153, 0, 0, 0.2);
+}
+
+.container {
+  background-color: crimson;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.container h4 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.container p {
+  font-size: 1.3em;
+  font-weight: 400;
+  position: relative;
+  text-align: right;
 }
 
 #nav {
@@ -94,7 +130,7 @@ header #toggle:after {
   width: 400px;
   height: 100vh;
   background: crimson;
-  z-index: -1;
+  z-index: 1;
   display: grid;
   place-items: center;
   transition: 0.5s;
@@ -115,7 +151,7 @@ header #toggle:after {
 }
 
 #nav ul li a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   display: inline-block;
   font-size: 2em;
@@ -127,7 +163,7 @@ header #toggle:after {
   max-width: 600px;
 }
 .content h2 {
-  color: #fff;
+  color: black;
   font-size: 2.5em;
 }
 
@@ -138,19 +174,20 @@ header #toggle:after {
 
 .content p {
   font-size: 1.2em;
-  color: white;
+  color: black;
   font-weight: 300;
 }
 .content a {
   position: relative;
   display: inline-block;
   margin-top: 20px;
-  background-color: white;
-  color: black;
+  background-color: crimson;
+  color: white;
   padding: 10px 30px;
   text-decoration: none;
   font-size: 1.2em;
   font-weight: 500;
+  border-radius: 5px;
 }
 
 .sci {
@@ -170,12 +207,12 @@ header #toggle:after {
   width: 50px;
   height: 50px;
   text-decoration: none;
-  border: 1px solid white;
+  border: 1px solid black;
   margin: 10px 0 0;
 }
 
 .sci li a:hover {
-  background-color: white;
+  background-color: black;
 }
 
 .sci li a img {
