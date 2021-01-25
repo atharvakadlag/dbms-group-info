@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700,800,900&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  /* color: white; */
+  box-sizing: border-box; /* The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not. */
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -13,6 +12,7 @@ header {
   left: 0;
   width: 100%;
   display: flex;
+  /* Displays an element as a block-level flex container	 */
   justify-content: space-between;
   padding: 40px 100px;
   z-index: 10000;
@@ -22,7 +22,7 @@ header {
 header .logo {
   position: relative;
   font-weight: 700;
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 2em;
   text-transform: uppercase;
@@ -37,32 +37,32 @@ header #toggle {
   cursor: pointer;
 }
 
-header #toggle:before {
+header #toggle::before {
   content: "";
   position: absolute;
   top: 7px;
   width: 100%;
   height: 2px;
-  background: black;
+  background: white;
 }
 
-header #toggle:after {
+header #toggle::after {
   content: "";
   position: absolute;
   bottom: 7px;
   width: 100%;
   height: 2px;
-  background: black;
+  background: white;
 }
 
-.banner.active header #toggle:before {
+.banner.active header #toggle::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
   transition: 0.5s;
 }
 
-.banner.active header #toggle:after {
+.banner.active header #toggle::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
@@ -74,7 +74,7 @@ header #toggle:after {
   width: 100%;
   min-height: 100vh;
   padding: 100px;
-  background-color: white;
+  background-color: #202020;
   background-size: cover;
   display: flex;
   justify-content: space-around;
@@ -95,14 +95,11 @@ header #toggle:after {
   margin: 0px 10px;
 }
 
-.card img {
+.card img,
+.pic {
   height: 300px;
-  width: 320px;
+  width: 290px;
   border-radius: 10px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(153, 0, 0, 0.2);
 }
 
 .container {
@@ -151,7 +148,7 @@ header #toggle:after {
 }
 
 #nav ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
   display: inline-block;
   font-size: 2em;
@@ -163,7 +160,7 @@ header #toggle:after {
   max-width: 600px;
 }
 .content h2 {
-  color: black;
+  color: white;
   font-size: 2.5em;
 }
 
@@ -174,7 +171,7 @@ header #toggle:after {
 
 .content p {
   font-size: 1.2em;
-  color: black;
+  color: white;
   font-weight: 300;
 }
 .content a {
@@ -185,8 +182,8 @@ header #toggle:after {
   color: white;
   padding: 10px 30px;
   text-decoration: none;
-  font-size: 1.2em;
-  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: 600;
   border-radius: 5px;
 }
 
@@ -207,24 +204,18 @@ header #toggle:after {
   width: 50px;
   height: 50px;
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid white;
   margin: 10px 0 0;
 }
 
 .sci li a:hover {
-  background-color: black;
+  background-color: white;
 }
 
 .sci li a img {
   max-width: 20px;
   filter: invert(1);
   mix-blend-mode: difference;
-}
-
-.pic {
-  height: 300px;
-  width: 328px;
-  border-radius: 2%;
 }
 
 @media (max-width: 768px) {
