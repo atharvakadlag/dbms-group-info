@@ -87,6 +87,10 @@ header #toggle::after {
   transform: translateX(-400px);
 }
 
+.cards {
+  display: flex;
+}
+
 .card {
   height: 400px;
   width: 300px;
@@ -249,6 +253,11 @@ header #toggle::after {
 
   .banner.active {
     transform: translateX(-200px);
+  }
+
+  .cards {
+    padding-top: 83px;
+    display: block;
   }
 
   #nav {
